@@ -1,3 +1,5 @@
+
+
 package com.portfolio.la;
 
 import org.springframework.boot.SpringApplication;
@@ -6,11 +8,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+
 @SpringBootApplication
-public class LaApplication {
+public class laApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LaApplication.class, args);
+		SpringApplication.run(laApplication.class, args);
 	}
 
 	@Bean
