@@ -10,10 +10,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
 @SpringBootApplication
-public class laApplication {
+public class LaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(laApplication.class, args);
+		SpringApplication.run(LaApplication.class, args);
 	}
 
 	@Bean
