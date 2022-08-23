@@ -66,7 +66,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
         return http.build();
     }
 
-   
+   @Bean
     @Override
     protected AuthenticationManager authenticationManager() throws Exception {
        return super.authenticationManager();

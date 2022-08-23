@@ -13,7 +13,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
@@ -22,16 +21,16 @@ import javax.validation.constraints.NotNull;
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
- private int id;
+    private int id;
     @NotNull
- private String nombre;
+    private String nombre;
     @NotNull
-    @Column (unique = true)
- private String nombreUsuario;
+    @Column(unique = true)
+    private String nombreUsuario;
     @NotNull
- private String email;
+    private String email;
     @NotNull
- private String password;
+    private String password;
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name ="usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
     private Set<Rol> roles = new HashSet<>();
@@ -47,7 +46,8 @@ public class Usuario {
         this.email = email;
         this.password = password;
     }
-    //Getters & Setters
+    
+    //Getter Y Setter
 
     public int getId() {
         return id;
